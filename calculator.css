@@ -1,0 +1,126 @@
+/* Base styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  margin: 0;
+  padding: 1rem;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: bgPulse 10s infinite alternate;
+}
+
+@keyframes bgPulse {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+h1 {
+  color: #00f0ff;
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff;
+}
+
+/* Calculator Container */
+.calc {
+  background: #0a0a0a;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 0 25px #00ffffaa;
+  width: 100%;
+  max-width: 400px;
+  animation: neonGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes neonGlow {
+  0% {
+    box-shadow: 0 0 15px #00ffff;
+  }
+  100% {
+    box-shadow: 0 0 30px #00ffff, 0 0 60px #00ffff;
+  }
+}
+
+/* Display Input */
+input {
+  width: 100%;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: right;
+  border-radius: 10px;
+  border: none;
+  background: #111;
+  color: #00ffff;
+  border: 2px solid #00ffff;
+  box-shadow: 0 0 10px #00ffff55;
+}
+
+/* Buttons Grid */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+/* Standard Buttons */
+button {
+  font-size: 1.2rem;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: #111;
+  color: #00ffff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 12px #00ffff55;
+  text-shadow: 0 0 8px #00ffff99;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
+}
+
+/* Special Buttons */
+button[style*="background: #ffc107"] {
+  background: #ffa500;
+  color: #000;
+  box-shadow: 0 0 15px #ffaa00;
+}
+
+button[style*="background: #dc3545"] {
+  background: #ff0040;
+  color: #fff;
+  box-shadow: 0 0 15px #ff0055;
+}
+
+/* Responsive: Mobile */
+@media (max-width: 640px) {
+  .calc {
+    padding: 1rem;
+  }
+
+  input {
+    font-size: 1.4rem;
+    height: 100px;
+    width: 100%;
+  }
+
+  .buttons {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+  button {
+    font-size: 1.1rem;
+    padding: 12px;
+  }
+}

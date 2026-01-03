@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Neon Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo neon-text heading" >Portfolio</div>
+    <nav class="nav-menu">
+      <a href="#" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>  
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <div id="feedbackForm" class="feedback-popup">
+        <form action="https://formspree.io/f/mpwdgoyy" method="POST" class="form-popup">
+          <input type="search" name="feedback" placeholder="feedback enter" class="input" required />
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+      </div>
+          </nav>
+  </header>
+  
+  <!-- Feedback Popup Form -->
+ 
+  
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <img src="./images/suraj yadav.jpeg" alt="My Photo" class="profile-img" />
+      <div>
+<h1 class="title neon-text">
+  <span class="typewriter-text">Hi I am Suraj Yadav</span>
+</h1>      
+  <p class="subtitle">I’m a passionate Frontend Developer turning ideas into responsive, engaging user interfaces.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <h2 class="heading">About Me</h2>
+    <p class="text">
+      Hi, my name is Suraj Yadav and I am 19 years old. I completed my 12th from NIOS board and currently live in Pusta sector 80, Noida. I'm a passionate Frontend Developer dedicated to building responsive, interactive, and user-friendly web interfaces. I specialize in turning creative ideas into functional and visually appealing websites using modern technologies like HTML, CSS, JavaScript, and frontend frameworks.
+      <br><br>
+      I enjoy crafting the parts of a website that users see and interact with — from clean layouts to smooth animations. My focus is on writing clean code, optimizing performance, and delivering seamless user experiences across all devices.
+      <br><br>
+      Whether it’s a personal project or a team collaboration, I approach every challenge with curiosity, creativity, and a commitment to excellence.
+    </p>
+  </section>
+
+  <section class="section" id="skills">
+    <h2 class="heading">Skills</h2>
+    <p class="skill-summary">Frontend Developer skilled in crafting responsive UIs with HTML, CSS, JavaScript, and modern tools.</p>
+    
+    <section class="skills">
+    
+      <div class="skill">
+        <strong>HTML5</strong>
+        <p>Structure of web pages, semantic tags, multimedia support, and SEO-friendly layout.</p>
+      </div>
+    
+      <div class="skill">
+        <strong>CSS3</strong>
+        <p>Styling with animations, transitions, flexbox, grid, media queries for responsive design.</p>
+      </div>
+    
+      <div class="skill">
+        <strong>JavaScript</strong>
+        <p>Adding interactivity, DOM manipulation, event handling, and working with APIs.</p>
+      </div>
+    
+      <div class="skill">
+        <strong>Bootstrap</strong>
+        <p>Responsive design framework with pre-built components like navbars, modals, and grid system.</p>
+      </div>
+    
+      <div class="skill">
+        <strong>Tailwind CSS</strong>
+        <p>Utility-first CSS framework for rapidly building custom designs directly in markup.</p>
+      </div>
+    
+      <div class="skill">
+        <strong>MySQL</strong>
+        <p>Relational database management system used for storing and managing structured data.</p>
+      </div>
+    
+      <div class="skill">
+        <strong>Git & GitHub</strong>
+        <p>Version control system and remote repository hosting for team collaboration and project tracking.</p>
+      </div>
+    </section>
+    
+  
+
+  <!-- Projects Section -->
+  <section class="section skills" id="projects">
+    <h2 class="heading ">Projects</h2>
+    <div class="projects ">
+      <div class="project glow-border">
+        <img src="./images/loader.gif" alt="Loader Project">
+        <a href="./loader.html" class="project-title">Loader</a>
+        <p class="text">A visually appealing CSS loader animation designed to enhance user experience during content loading. Built using HTML and CSS.</p>
+      </div>
+      <div class="project glow-border">
+        <img src="./images/calculator.gif" alt="Calculator Project">
+        <a href="./calculator.html" class="project-title">Calculator</a>
+        <p class="text">A functional and responsive Calculator app built using HTML, CSS, and JavaScript. It handles basic arithmetic operations with a clean layout and smooth button interactions.</p>
+      </div>
+      <div class="project glow-border">
+        <img src="./images/Currency-converter.gif" alt="Calculator Project">
+        <a href="./currency-converter.html" class="project-title">Currency converter</a>
+        <p class="text">A currency converter  It uses an API to fetch up-to-date exchange rates from reliable online sources, ensuring accurate and real-time conversion values.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <h2 class="heading">Contact</h2>
+    <form action="https://formspree.io/f/mpwdgoyy" method="POST" class="form">
+      <input type="text" name="name" placeholder="Your Name" class="input" required />
+      <input type="email" name="email" placeholder="Your Email" class="input" required />
+      <textarea name="message" placeholder="Your Message" class="input" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Suraj Yadav. Built with passion & code.</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>

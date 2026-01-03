@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mini Calculator</title>
+<link rel="stylesheet" href="./calculator.css">
+</head>
+<body>
+  <h1 style="color: white; display: flex; justify-content: center; align-items: center;"> CALCULATOR</h1>
+  <div class="calc">
+    <input id="display" disabled  />
+    <div class="buttons">
+      <button onclick="press('7')">7</button>
+      <button onclick="press('8')">8</button>
+      <button onclick="press('9')">9</button>
+      <button onclick="press('/')">/</button>
+    
+      <button onclick="press('4')">4</button>
+      <button onclick="press('5')">5</button>
+      <button onclick="press('6')">6</button>
+      <button onclick="press('*')">*</button>
+    
+      <button onclick="press('1')">1</button>
+      <button onclick="press('2')">2</button>
+      <button onclick="press('3')">3</button>
+      <button onclick="press('-')">-</button>
+    
+      <button onclick="press('0')">0</button>
+      <button onclick="press('.')">.</button>
+      <button onclick="calculate()">=</button>
+      <button onclick="press('+')">+</button>
+    
+      <button onclick="backspace()" style="grid-column: span 4; background: #ffc107; color: black; width: 150px;" >Backspace</button>
+      <button onclick="clearDisplay()" style="grid-column: span 4; background: #dc3545; width: 350px; width: 150px;"> All Clear</button>
+    </div>
+    
+  </div>
+  <script src="./calculator.js"></script>
+</body>
+</html>
