@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Neon Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -32,7 +32,7 @@
   <!-- Hero Section -->
   <section class="hero" id="home">
     <div class="hero-content">
-      <img src="./images/suraj yadav.jpeg" alt="My Photo" class="profile-img" />
+      <img src="./suraj yadav.jpeg" alt="My Photo" class="profile-img" />
       <div>
 <h1 class="title neon-text">
   <span class="typewriter-text">Hi I am Suraj Yadav</span>
@@ -103,17 +103,17 @@
     <h2 class="heading ">Projects</h2>
     <div class="projects ">
       <div class="project glow-border">
-        <img src="./images/loader.gif" alt="Loader Project">
+        <img src="./loader.gif" alt="Loader Project">
         <a href="./loader.html" class="project-title">Loader</a>
         <p class="text">A visually appealing CSS loader animation designed to enhance user experience during content loading. Built using HTML and CSS.</p>
       </div>
       <div class="project glow-border">
-        <img src="./images/calculator.gif" alt="Calculator Project">
+        <img src="./calculator.gif" alt="Calculator Project">
         <a href="./calculator.html" class="project-title">Calculator</a>
         <p class="text">A functional and responsive Calculator app built using HTML, CSS, and JavaScript. It handles basic arithmetic operations with a clean layout and smooth button interactions.</p>
       </div>
       <div class="project glow-border">
-        <img src="./images/Currency-converter.gif" alt="Calculator Project">
+        <img src="./Currency-converter.gif" alt="Calculator Project">
         <a href="./currency-converter.html" class="project-title">Currency converter</a>
         <p class="text">A currency converter  It uses an API to fetch up-to-date exchange rates from reliable online sources, ensuring accurate and real-time conversion values.</p>
       </div>
@@ -138,3 +138,4 @@
   <script src="./script.js"></script>
 </body>
 </html>
+
